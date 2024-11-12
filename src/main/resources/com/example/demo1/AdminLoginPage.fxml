@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.LoginController">
+   <left>
+      <AnchorPane prefHeight="512.0" prefWidth="270.0" style="-fx-background-color: #013e7f;" BorderPane.alignment="CENTER">
+         <children>
+            <Circle fill="DODGERBLUE" layoutX="135.0" layoutY="123.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
+            <Label layoutX="25.0" layoutY="250.0" prefHeight="34.0" prefWidth="220.0" text="Genie Informatique " textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="62.0" layoutY="284.0" text="Admin Login Page" textFill="WHITE" />
+            <Label layoutX="90.0" layoutY="96.0" text="LOGO ESLT" />
+         </children></AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="199.0" layoutY="71.0" prefHeight="32.0" prefWidth="105.0" style="}: ;" text="Username" textFill="#434343">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="199.0" layoutY="192.0" prefHeight="32.0" prefWidth="101.0" text="Password" textFill="#434343">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="TF1" layoutX="99.0" layoutY="132.0" prefHeight="39.0" prefWidth="299.0" style="-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0.5, 2, 2);;" />
+            <PasswordField fx:id="PF1" layoutX="100.0" layoutY="250.0" prefHeight="39.0" prefWidth="298.0" style="-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0.5, 2, 2);;" />
+            <Button fx:id="loginbtn" layoutX="161.0" layoutY="362.0" mnemonicParsing="false" onAction="#bntLogin" prefHeight="44.0" prefWidth="176.0" style="-fx-background-color: #013e7f;" text="Login" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Hyperlink layoutX="200.0" layoutY="440.0" text="Contact us" />
+            <Label fx:id="errorLabel" layoutX="103.0" layoutY="309.0" prefHeight="27.0" prefWidth="291.0" textAlignment="CENTER" textFill="#dd1010">
+               <font>
+                  <Font size="22.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
